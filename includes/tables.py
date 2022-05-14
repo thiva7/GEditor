@@ -11,16 +11,16 @@ class Table(QDialog):
         self.initUI()
 
     def initUI(self):
-        rowsLabel = QLabel("Σειρές:", self)
+        rowsLabel = QLabel("Rows:", self)
         self.rows = QSpinBox(self)
-        colsLabel = QLabel("Στήλες:", self)
+        colsLabel = QLabel("Columns:", self)
         self.cols = QSpinBox(self)
-        spaceLabel = QLabel("Παχος Περιθωριων:", self)
+        spaceLabel = QLabel("Margin Thickness:", self)
         self.space = QSpinBox(self)
-        padLabel = QLabel("Μεγεθος κελιών:", self)
+        padLabel = QLabel("Cell size:", self)
         self.pad = QSpinBox(self)
         self.pad.setValue(10)
-        insertButton = QPushButton("Εισάγετε", self)
+        insertButton = QPushButton("Add", self)
         insertButton.clicked.connect(self.insert)
 
         layout = QGridLayout()
@@ -44,8 +44,8 @@ class Table(QDialog):
         cols = self.cols.value()
         if not rows or not cols:
             popup = QMessageBox(QMessageBox.Warning,
-                                "Σφάλμα παραμέτρου",
-                                "Ο αριθμός γραμμών ή στηλών δεν μπορεί να είναι μηδενικός!",
+                                "Error",
+                                "The number of rows or columns can not be zero!",
                                 QMessageBox.Ok, self)
             popup.show()
         else:
