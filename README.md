@@ -28,6 +28,9 @@ This is simple text editor build with PYQT5
 3. Add tables
 4. Find  / replace text 
 
+# install requirements
+`pip install -r requirements.txt`
+
 Execution: 
 `python3 editor.py`
 
