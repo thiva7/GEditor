@@ -35,6 +35,9 @@ This is simple text editor build with PYQT5
 Execution: 
 `python3 editor.py`
 
+# Media 
+![main image](https://raw.githubusercontent.com/thiva7/GEditor/main/images/screenshots/editor.png)
+
 # Contributing
 We're happy you want to contribute! You can help us in different ways:
 
