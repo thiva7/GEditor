@@ -31,6 +31,7 @@ This is simple text editor build with PYQT5
 # install requirements
 `pip install -r requirements.txt`
 
+# Run Editor
 Execution: 
 `python3 editor.py`
 
